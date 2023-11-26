@@ -1,0 +1,141 @@
+/* Homepage.css */
+
+.home
+{
+    height: 25%;
+    background-color: white;
+
+}
+.dual-part-container
+{
+    height: 25%;
+    background-color: white;    
+}
+.upper-part {
+    background-color: red;
+    height: 330px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+  }
+  .sofa {
+    margin-top: 200px;
+    margin-left: 800px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); /* Add a shadow to non-transparent parts */
+  }
+  
+  .frame {
+    width: 400px;
+    height: 1000px;
+    margin-top: -490px;
+    margin-left: 1050px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); /* Add a shadow to non-transparent parts */
+  }
+  
+  .lamp {
+    margin-top: -100px;
+    margin-left: -110px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); /* Add a shadow to non-transparent parts */
+  }
+  
+  
+  .topic1
+  {
+    margin-top: -300px;
+    margin-left: -1100px;
+    font-size:80px;
+    font-weight: bold;
+    font-family: 'Cairo', sans-serif;
+
+  }
+  .topic1_2
+  {
+    margin-top: -130px;
+    margin-left: -1050px;
+    font-size:80px;
+    font-weight: bold;
+    font-family: 'Cairo', sans-serif;
+  }
+  .rentbutton
+  {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    height: 60px;
+    width: 200px;
+    margin-top: -30px;
+    margin-left: 330px;
+  }
+  .bottom-part {
+    background-color: white;
+    height: 55%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%; /* Adjust the margin-top to start from 25% down */
+  }
+  .lower1
+  { background-color: blue;
+    height: 250px;
+    width: 100%;
+    margin-top: -320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .car
+  {
+    margin-top: 100px;
+    margin-right: 1200px;
+    
+  }
+    .topic2
+    {
+        margin-top: -350px;
+        margin-left: 700px;
+        font-size:80px;
+        font-weight: bold;
+        font-family: 'Cairo', sans-serif;
+    
+    }
+  .topic2_2{
+    margin-top: -130px;
+    margin-left: 740px;
+    font-size:80px;
+    font-weight: bold;
+    font-family: 'Cairo', sans-serif;
+  }
+  .lendbutton
+  {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    height: 45px;
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 670px;
+  }
+
+  

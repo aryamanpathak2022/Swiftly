@@ -1,0 +1,59 @@
+/* NavigationBar.css */
+
+@font-face {
+    font-family: 'Cairo';
+    src: url('./fonts/cairo.ttf') format('truetype');
+    /* Add other font formats if needed (e.g., woff, woff2) */
+  }
+  
+  @font-face {
+    font-family: 'Leckerli';
+    src: url('./fonts/Leckerli.ttf') format('truetype');
+  }
+  
+  nav {
+    background-color: #ff1515; /* Set a background color */
+  }
+  
+  ul {
+    list-style: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox to create a flexible layout */
+  }
+  
+  li {
+    margin-right: 2%; /* Add some spacing between the list items using percentage */
+    font-family: 'Cairo', sans-serif; /* Use the Cairo font family */
+    /* font-weight: bold; Make the text bold */
+   
+    font-size: 1.3em;
+  }
+  .navitems
+  {
+    margin-top:0.5%;
+  }
+  
+  .logo {
+    /* Additional styling for the logo class goes here */
+    font-family: 'Leckerli', cursive; /* Use the Leckerli font family */
+    /* increase font size */
+    font-size: 2.5em;
+    /* shift to left  */
+    margin-left: 1%;
+  }
+  
+  /* li:first-child {
+    margin-left: 3%; /* No need for a fixed margin-left on the first item */
+  /* } */ */
+  
+  a {
+    text-decoration: none; /* Remove underlines from links */
+    color: white; /* Set the text color for links */
+    font-weight: bold; /* Make the text bold */
+  }
+  
+  a:hover {
+    color: lightgray; /* Change text color on hover */
+  }
+  
