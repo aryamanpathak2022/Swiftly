@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Leckerli+One&family=Lobster&family=Rammetto+One&display=swap');
+
+.title
+{
+    font-family: Leckerli One;
+}
+.slick-prev {
+    left: 3% !important;
+    z-index: 1;
+  }
+  .slick-next {
+    right: 3% !important;
+    z-index: 1;
+  }
+  /* FeaturedItems.css */
+.slick-slide {
+    margin-right: 15px; /* Adjust the margin to set the gap between cards */
+    border-radius: 200px; /* Adjust the border-radius for rounded corners */
+    width: 100px; /* Set the width of the cards */
+  }
+  
+  /* Add this style to remove the border-radius on the last card */
+
+  
+  /* Add this style to set the border-radius for the dots */
+  .slick-dots li button {
+    border-radius: 50%;
+  }
+  

@@ -2,6 +2,7 @@
 import React from 'react';
 import NavBar from "../components/NavBar/NavBar.jsx"
 import HeroSection from '../components/HeroSection/HeroSection.jsx';
+import FeaturedItems from '../components/FeaturedItems/FeaturedItems.jsx';
 
 // Functional component App
 function LandingPage() {
@@ -9,6 +10,7 @@ function LandingPage() {
     <div>
         <NavBar/>
         <HeroSection/>
+        <FeaturedItems/>
      
     </div>
   );
