@@ -1,5 +1,6 @@
 import React from 'react';
 import './NavBar.css'
+import { Link } from "react-router-dom";
 function NavBar() {
   return (
     <div>
@@ -20,8 +21,12 @@ function NavBar() {
           />
 
           {/* Add login and sign up buttons here */}
+
           <button className='mr-2 text-2xl p-4'>Login</button>
+          <Link to={"/SignUp"}>
           <button className='mr-2 text-2xl'>Sign Up</button>
+          </Link>
+
         </div>
       </div>
     </div>

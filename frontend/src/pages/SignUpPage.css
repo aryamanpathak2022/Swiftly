@@ -1,0 +1,43 @@
+.bg1
+{
+    background-image:url( "../assets/signup_bg.png");
+}
+/* SignUpPage.css */
+
+.bg1 {
+    /* Add any background styles you need */
+  }
+  
+  .text-6xl {
+    font-size: 3rem; /* Adjust the font size as needed */
+  }
+  
+  form {
+    font-size: 1.2rem; /* Adjust the font size for form elements */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem; /* Adjust the font size for input fields */
+    border: 2px solid black; /* Add a black border around input fields */
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    background-color: #1e40af; /* Change the background color as needed */
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem; /* Adjust the font size for the button */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
