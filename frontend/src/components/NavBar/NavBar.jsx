@@ -21,8 +21,9 @@ function NavBar() {
           />
 
           {/* Add login and sign up buttons here */}
-
+          <Link to={"/Login"}>
           <button className='mr-2 text-2xl p-4'>Login</button>
+          </Link>
           <Link to={"/SignUp"}>
           <button className='mr-2 text-2xl'>Sign Up</button>
           </Link>
