@@ -2,6 +2,9 @@
 
 Swiftly is a peer-to-peer rental website where users can rent items from others in their community. It is built using React, Axios, Django, and REST APIs.
 
+![Swiftly ](assests/home.png "Swiftly")
+
+
 ## Features
 
 - User authentication and authorization
