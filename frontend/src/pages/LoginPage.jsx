@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import "./SignUpPage.css";
 
+import { Link } from "react-router-dom";
+
 const SignUpPage = () => {
   const [formData, setFormData] = useState({
     firstname: "",
     password: ""
   });
+  const [error, setError] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -16,7 +19,7 @@ const SignUpPage = () => {
     e.preventDefault();
 
     try {
-      const url = 'http://localhost:8000/api/';
+      const url = 'http://localhost:8000/api/login'; // Assuming login API endpoint
       const response = await fetch(url, {
         method: 'POST',
         headers: {
@@ -27,22 +30,27 @@ const SignUpPage = () => {
 
       if (response.ok) {
         const data = await response.json();
+        const { token, error } = data;
 
-        if (data.password_match ) {
-          console.log("Password  matched");
-          // Handle success, e.g., redirect to another page or set some state.
-        } else {
-          console.error("Password does not match");
-     
-          // Handle the case when the password does not match.
+        if (token) {
+          // Store the token in local storage
+          localStorage.setItem('token', token);
+          console.log(token);
+          console.log(10);
+          // Redirect to another page or update state to indicate successful login
+          console.log("Login successful");
+          //redirect to /dashboard
+          window.location.href = '/dashboard';
+        } else if (error) {
+          setError(error);
         }
       } else {
         console.error("Error fetching data");
-        // Handle other HTTP errors here.
+        setError("Error occurred while logging in");
       }
     } catch (error) {
       console.error("Error:", error);
-      // Handle other errors (e.g., network issues) here.
+      setError("Network error occurred");
     }
   };
 
@@ -75,10 +83,13 @@ const SignUpPage = () => {
               required
             />
           </div>
-
+{/* redirect to /dashboard */}
+{/* <Link to={"/dashboard"}> */}
           <button type="submit" className="bg-blue text-white px-4 py-2">
             Login
           </button>
+          {/* </Link> */}
+          {error && <div className="text-red-500">{error}</div>}
         </form>
       </div>
     </>

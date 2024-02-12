@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "user",
     'corsheaders',
+        'rest_framework_simplejwt',
+        'chat',
     
     
 
@@ -114,6 +116,12 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+        # Add other authentication classes if needed
+    ),
+}
 
 LANGUAGE_CODE = "en-us"
 
@@ -136,3 +144,19 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # settings.py
 
 APPEND_SLASH = False
+
+# settings.py
+AUTHENTICATION_CLASSES = [
+    'user.auth_backends.User',
+    "user.User",
+]
+SIMPLE_JWT = {
+    'USER_ID_FIELD': 'id',
+    'USER_ID_CLAIM': 'user_id',
+    'SIGNING_KEY': SECRET_KEY,  # Change this to your actual secret key
+    'ALGORITHM': 'HS256',
+}
+
+
+
+

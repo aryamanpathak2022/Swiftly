@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import LandingPage from './pages/LandingPage'; // Adjust the path as needed
 import LoginPage from './pages/LoginPage';
 import SignUpPage from './pages/SignUpPage';
+import Dashboard from './pages/Dasboard';
 
 // Your App component (replace 'App' with your actual component name)
 function App() {
@@ -17,6 +18,9 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/SignUp" element={<SignUpPage />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+
+
           {/* Other routes go here */}
         </Routes>
       </BrowserRouter>
