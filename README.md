@@ -21,12 +21,12 @@ Swiftly is a peer-to-peer rental website where users can rent items from others 
 2. Navigate to frontend directory
 `cd frontend`
 3. Install dependencies 
-`npm install `
+`npm install`
 4. Start frontend
 `npm start`
 5. Navigate to Backend directory
 `cd ..`
-cd backend`
+`cd backend`
 6. Migrate
 `python manage.py makemigrations`
 `python manage.py migrate`
@@ -36,10 +36,15 @@ cd backend`
 
 ## Usage
 -Sign up for an account or log in if you already have one.
+
 -Browse available items or search for specific items using filters.
+
 -Click on an item to view details and rental options.
+
 -Rent an item by selecting the rental period and making a payment.
+
 -Communicate with the owner using the messaging system for pickup/delivery arrangements.
+
 -Return the item on time and leave a review for the owner.
 
 ## Technologies Used
